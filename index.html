@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Click to Toggle Audio</title>
+</head>
+<body>
+    <div class="audio_wrap">
+        <img src="play.png" id="audioImage" alt="クリックして再生/停止" style="cursor: pointer;">
+        <audio id="audio" src="img/bgm.mp3" loop>
+            あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+        </audio>
+    </div>
+
+    <script>
+        document.getElementById('audioImage').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>
+
+

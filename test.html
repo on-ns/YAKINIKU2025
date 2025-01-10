@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Initial Play with SVG Color Change</title>
+</head>
+<body>
+    <div class="audio_wrap" style="display: flex; align-items: center;">
+        <svg id="audioIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-music-note-beamed" viewBox="0 0 16 16" style="cursor: pointer;">
+            <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
+            <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+        </svg>
+        <audio id="audio" src="img/bgm.mp3" loop autoplay>
+            あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+        </audio>
+    </div>
+
+    <script>
+        var audio = document.getElementById('audio');
+        var audioIcon = document.getElementById('audioIcon');
+
+        audioIcon.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.style.fill = 'green';
+            } else {
+                audio.pause();
+                audioIcon.style.fill = 'gray';
+            }
+        });
+
+        // ページ読み込み時に音声が再生されるように設定
+        window.addEventListener('load', function() {
+            audio.play();
+            audioIcon.style.fill = 'green';
+        });
+
+        // 音声が終了したらアイコンの色をリセット
+        audio.addEventListener('ended', function() {
+            audioIcon.style.fill = 'gray';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>牛工大</title>
+<link href="yakiniku_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- bootstrap-datepickerを読み込む -->
+<link rel="stylesheet" type="text/css" href="../bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.min.css">
+<script type="text/javascript" src="../bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="../bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ja.min.js"></script>
+</head>
+
+<body id="top">
+<header>
+  <div class="logo">
+	<a href="#top"><img src="img/logo.png"></a>
+  </div>
+  <div class="menu">
+	<nav>
+		<ul class="ddmenu">
+			<li><a href="yakiniku.html">ホーム</a></li>
+			<li><a href="yakiniku.html#skip">メニュー</a></li>
+			<li><a href="4_access.html">店舗検索</a></li>
+			<li><a href="5_news.html">おしらせ</a></li>
+			<li><a href="6_reservation.html"><img id="resbtn" src="img/res.gif"></a></li>
+			<div class="audio_wrap" style="display: flex; align-items: center;">
+				<svg id="audioIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-music-note-beamed" viewBox="0 0 16 16" style="cursor: pointer;">
+					<path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
+					<path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+					<path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+				</svg>
+				<audio id="audio" src="img/bgm.mp3" loop>
+					あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+				</audio>
+				<script src="script.js"></script>
+			</div>
+		</ul>
+	</nav>
+</div>
+</header>
+<div class="big_box">
+    <main>
+        <div class="oshinagaki">
+            <h1>牛肉</h1>
+            <div class="niku">
+                <div class="niku-text">
+                    <h2>工大カルビ</h2>
+                    <p>骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
+                </div>
+                <div class="niku-img">
+                    <img src="img/koudai_karubi.jpg">
+                </div>
+            </div>
+            <div class="niku">
+                <div class="niku-text">
+                    <h2>カルビ</h2>
+                    <p>牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
+                </div>
+                <div class="niku-img">
+                    <img src="img/karubi.jpg">
+                </div>
+            </div>
+            <div class="niku">
+                <div class="niku-text">
+                    <h2>ハラミ</h2>
+                    <p>国民のアイドル！お店一押し</p>
+                </div>
+                <div class="niku-img">
+                    <img src="img/harami.jpg">
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer>	
+	<address>
+		お問い合わせ：<a href="mailto:info@yakiniki.umai.up">info@yakiniki.umai.up</a>
+	</address>
+    <p><small>© 2024 GYU-KODAI</small></p>
+</footer>
+	
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>牛工大</title>
+<link href="yakiniku_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- bootstrap-datepickerを読み込む -->
+<link rel="stylesheet" type="text/css" href="../bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.min.css">
+<script type="text/javascript" src="../bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="../bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.ja.min.js"></script>
+</head>
+
+<body id="top">
+<header>
+  <div class="logo">
+	<a href="#top"><img src="img/logo.png"></a>
+  </div>
+  <div class="menu">
+	<nav>
+		<ul class="ddmenu">
+			<li><a href="#top">ホーム</a></li>
+			<li><a href="#skip">メニュー</a></li>
+			<li><a href="4_access.html">店舗検索</a></li>
+			<li><a href="5_news.html">おしらせ</a></li>
+			<li><a href="6_reservation.html"><img id="resbtn" src="img/res.gif"></a></li>
+			<div class="audio_wrap" style="display: flex; align-items: center;">
+				<svg id="audioIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-music-note-beamed" viewBox="0 0 16 16" style="cursor: pointer;">
+					<path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
+					<path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+					<path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+				</svg>
+				<audio id="audio" src="img/bgm.mp3" loop>
+					あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+				</audio>
+				<script src="script.js"></script>
+			</div>
+		</ul>
+	</nav>
+</div>
+</header>	
+
+<div class="big_box">
+<main>
+	<div class="video-wrap">
+		<video src="img/bbq.mp4" width=100% autoplay loop muted playsinline>
+		</video>
+	</div>
+	<div class="smallbox">
+		<div class="oshinagaki">
+		<h1 id="skip">メニュー</h1>
+		<section>
+			<a href="1_gyu.html"><img src="img/gyu.jpg" alt="おいしい牛肉"></a>
+			<h2>牛肉</h2>
+			<p>こだわりの牛肉。</p>
+		</section>
+		<section>
+			<a href="2_buta.html"><img src="img/buta.jpg" alt="おいしい豚肉"></a>
+			<h2>豚肉</h2>
+			<p>こだわりの豚肉。</p>
+		</section>
+		<section>
+			<a href="3_tori.html"><img src="img/tori.jpg" alt="おいしい鶏肉"></a>
+			<h2>鶏肉</h2>
+			<p>こだわりの鶏肉。</p>
+		</section>
+		</div>
+	</div>
+		
+	<div class="smallbox">
+		<div class="about">
+			<h1>当店について</h1>
+			<div class="about-text">
+				<li>当店は、しちりんを使った本格炭火焼肉店です。</li>
+				<li>炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。</li>
+				<li>オーダーは、タッチパネルから行ってください。</li>
+				<li>会計は、キャッシュレス歓迎、<b>キャッシュレスの場合は１０％オフ</b>。</li>
+			</div>
+			<div class="about-img">
+				<img src="img/mise1.jpg">
+			</div>
+		</div>
+	</div>
+</main>
+</div>
+	
+<footer>	
+	<address>
+		お問い合わせ：<a href="mailto:info@yakiniki.umai.up">info@yakiniki.umai.up</a>
+	</address>
+    <p><small>© 2024 GYU-KODAI</small></p>
+</footer>
+</body>
+</html>
