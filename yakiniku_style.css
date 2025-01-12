@@ -115,7 +115,7 @@ main{
     float:right;
 }
 
-section {
+.cat {
     text-align: center;
     height: 250px;
     width: 190px;
@@ -180,12 +180,41 @@ html {
     scroll-behavior: smooth;
   }
 
-form {
-    padding: 30px 0px;
-}
-
 .audio_wrap{
     float:left;
     color:white;
     padding: 0px 6px;
+}
+
+.access_map {
+    float:left;
+    width: 500px;
+    height: 345px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    #googleMap {
+      height: 100%;
+      min-height: 100%;
+      width: 100%;
+    }
+  }
+
+.res-button {
+    background-color: #c3a559; /* ボタンの背景色 */
+    border: none; /* ボーダーを削除 */
+    padding: 10px 20px; /* 内部余白の設定 */
+    text-align: center; /* テキストの中央揃え */
+    text-decoration: none; /* テキストの下線を削除 */
+    display: inline-block; /* インラインブロックの表示 */
+    font-size: 16px; /* フォントサイズの設定 */
+    margin: 4px 2px; /* 外部余白の設定 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    color: inherit; /*リンク青回避*/
+    border-radius: 8px; /* ボタンの角を丸くする */
+    transition: background-color 0.3s ease; /* 背景色の変化にアニメーションを追加 */
+}
+
+.res-button:hover {
+    background-color: #c3a559d4; /* マウスオーバー時の背景色 */
 }
